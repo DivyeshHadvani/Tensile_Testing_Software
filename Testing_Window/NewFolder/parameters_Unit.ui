@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>300</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Proximal force sensor</string>
+   </property>
+   <widget class="QLabel" name="proximal_baude_label">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>47</y>
+      <width>70</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Baud rate</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="proximal_baude">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="proximal_com">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>COM11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM1</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="proximal_com_label">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>21</y>
+      <width>70</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>COM port</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="roller_dia">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>188</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>188</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Roller dia (mm)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="roller_steps">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>214</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>214</y>
+     <width>140</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Roller motor steps/rev</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="axis_steps">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>266</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="axis_pitch">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>240</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>266</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Axis motor steps/rev</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>100</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Axis pitch (mm)</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>300</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Distal force sensor</string>
+   </property>
+   <widget class="QLabel" name="com_distal_label">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>20</y>
+      <width>70</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>COM port</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="distal_baude">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="distal_baude_label">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>47</y>
+      <width>70</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Baud rate</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="distal_com">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>COM11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM1</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="save_parameters">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>450</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>100</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Unit Selection</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Unit_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>300</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string>F vs mm</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>10</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>F vs mm</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>kgf vs mm</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>340</y>
+     <width>300</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Arduino Controller</string>
+   </property>
+   <widget class="QLabel" name="Arduino_baude_label">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>47</y>
+      <width>70</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Baud rate</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Arduino_baude">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Arduino_com">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>COM11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM1</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="Arduino_com_label">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>21</y>
+      <width>70</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>COM port</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
